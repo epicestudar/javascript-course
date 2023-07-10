@@ -39,3 +39,27 @@ Variáveis e Tipos Primitivos - curso JS #05
  s.toLowerCase -- tudo para minúscula
 
  - document.write('Algum texto') --  este comando exibe a mensagem no documento do texto e não mais no prompt da janela. Para entender melhor vá até a pasta aula06 e no arquivo ex004.html
+
+ 
+ Operadores (parte1) - curso JS #07
+ 5 + 2 = 7 -- SOMA
+ 5 -2 = 3 -- SUBTRAÇAO
+ 5 * 2 = 10 -- MULTIPLICAÇAO
+ 5 / 2 = 2.5 -- DIVISAO
+ 5 % 2 = 1 -- RESTO DA DIVISAO
+ 5 ** 2 = 25 -- POTENCIAÇAO
+
+ - Ordem de precedência dos operadores aritméticos: 
+ 1 . ()
+ 2. **
+ 3. * / %
+ 4. + -
+
+
+ - Simplificando:
+ n = n + 4 ------- n +=4
+ n = n - 4 ------- n -=4
+ n = n * 4 ------- n *=4
+ n = n / 4 ------- n /=4
+ n = n ** 4 ------- n **=4
+ n = n % 4 ------- n %=4
