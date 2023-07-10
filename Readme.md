@@ -23,3 +23,19 @@ Variáveis e Tipos Primitivos - curso JS #05
  4. NÃO podem conter espaços
  5. NÃO podem ser paçavras reservadas que já existam na linguagem
  
+
+
+ Tratamento de Dados - Curso JS #06
+ - Sinal de + serve para concatenar as strings
+ - Com o comando Number vc transforma string em número (está na pasta aula06 e no arquivo ex003)
+ - Para passar número para String: String(nome da variável que quer transformar)
+
+ - `O aluno ${nome} com ${idade} anos tirou a nota ${nota}` -- neste comando, você constrói a frase dentro das duas crases invertidas fazendo uso do ${nome de sua variável}
+
+ - Formatando strings:
+ var s = 'Javascript'
+ s.lenght -- quantas caracteres a string tem
+ s.toUpperCase() -- tudo para maiúscula
+ s.toLowerCase -- tudo para minúscula
+
+ - document.write('Algum texto') --  este comando exibe a mensagem no documento do texto e não mais no prompt da janela. Para entender melhor vá até a pasta aula06 e no arquivo ex004.html

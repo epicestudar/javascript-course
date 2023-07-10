@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font: normal 20pt arial;
+    }
+</style>
+<body>
+    
+    <script>
+        var nome = window.prompt('Qual é o seu nome?');
+        document.write(`Olá ${nome}. Seu nome tem ${nome.length} letras <br/>`); // este comando exibirá a mensagem no corpo do documento e não mais na janelinha do prompt
+        document.write(`Olá ${nome}. Seu nome em maiúsculas fica ${nome.toUpperCase()} <br/>`); // exibira o nome tudo em letra maiúscula
+        document.write(`Olá ${nome}. Seu nome em minúsculas fica ${nome.toLowerCase()} <br/>`);
+    </script>
+</body>
+</html>
