@@ -63,3 +63,23 @@ Variáveis e Tipos Primitivos - curso JS #05
  n = n / 4 ------- n /=4
  n = n ** 4 ------- n **=4
  n = n % 4 ------- n %=4
+
+
+
+ Operadores (parte 2) - curso JS #08
+
+ - IDENTIDADE DE OPERADORES RELACIONAIS:
+ 5 == 5 --- true
+ 5 == '5' -- true
+ 5 === '5' --- false, os três sinais de iguais comparam tanto o valor como o tipo, enquanto os dois sinais testam apenas os valores
+ 5 === 5 --- true dnv 
+
+ - PRECEDÊNCIA DOS OPERADORES LOGICOS:
+ Primeiro o "!"
+ Depois o "&&"
+ E por último o "||"
+
+ - OPERADORES TERNÁRIOS: 
+ ? e : em uma mesma expressão
+ Sintaxe: teste ? true : false
+ Exemplo: media >= 7.0?"Aprovado":"Reprovado"
