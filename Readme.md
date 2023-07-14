@@ -83,3 +83,11 @@ Variáveis e Tipos Primitivos - curso JS #05
  ? e : em uma mesma expressão
  Sintaxe: teste ? true : false
  Exemplo: media >= 7.0?"Aprovado":"Reprovado"
+
+
+ Introdução ao DOM - curso JS #09
+ - TAGS PARA SELECIONAR DO HTML PARA JS:
+ por marca: getElementsByTagName('nome da tag')[indíce da tag]
+ por ID: getElementById('nome do id')
+ por nome: getElementsByName('nome do elemento')[indíce do nome ]
+ por classe: getElementsByClassName('nome da classe')

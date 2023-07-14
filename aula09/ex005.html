@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: rgb(29, 112, 138);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong></p>
+    <div id="msg">clique em mim</div>
+
+    <script>
+        var corpo = window.document.body;
+        corpo.style.background = 'black'; // mudará a cor do fundo para preto
+        var p1 = window.document.getElementsByTagName('p')[0]; // seleciona por tag, neste caso a tag p e o 0 se refere à primeira tag p apenas
+        window.document.write('Está escrito assim: ' + p1.innerText); // exibe novamente a primeira tag p
+        p1.style.color = 'blue'; // o texto escrito da primeira tag p se tornará azul
+
+        var d = window.document.getElementById('msg');
+        d.style.background = 'green';
+        d.innerHTML = 'Olá!'; // mudará a mensagem de cima por essa
+    </script>
+</body>
+</html>
