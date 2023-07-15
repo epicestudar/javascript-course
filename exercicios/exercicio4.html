@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         div#area{
+            font: normal 20pt arial;
+            background: green;
+            color: white;
+            width: 400px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+        div#exibir{
+            font: normal 20pt arial;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com dados v2.0</h1>
+    <div id="area" onclick="clicou()">
+        Clique aqui para começar
+    </div>
+
+    <div id="exibir">
+        Aqui irá aparecer o resultado
+    </div>
+
+    <script>
+        function clicou() {
+            var clicar = window.prompt('Qual é o seu nome?');
+            var d = document.getElementById('exibir');
+        d.innerText = 'Olá ' + clicar + '! É um grande prazer te conhecer!'
+        }
+    </script>
+</body>
+</html>

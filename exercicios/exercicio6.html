@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 6</title>
+
+    <style>
+        
+        body { font: 12pt Arial; }
+        button { font-size: 12pt; padding: 30px;  }
+
+        div#exibir{
+            margin-top: 2%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando números</h1>
+    <button id="somar" onclick="soma()">Iniciar a soma</button>
+    <div id="exibir">A soma aparecerá aqui...</div>
+
+    <script>
+        function soma() {
+            var n1 = Number(window.prompt('Digite um número: '));
+            var n2 = Number(window.prompt('Digite um número: '));
+            var somando = n1 + n2;
+            var d = document.getElementById('exibir');
+            d.innerHTML = 'A soma entre ' + n1 + ' e ' + n2 + ' é igual a ' + somando;
+        }
+    </script>
+</body>
+</html>

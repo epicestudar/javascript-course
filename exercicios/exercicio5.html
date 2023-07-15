@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5</title>
+
+    <style>
+        
+        body { font: 12pt Arial; }
+        button { font-size: 12pt; padding: 30px;  }
+    
+    </style>
+</head>
+<body>
+    <button id="clique" onclick="clicar()">Clique aqui para calcular!</button>
+    <div id="exibir">
+        O resultado vem aqui...
+    </div>
+
+    <script>
+        function clicar() {
+            var n1 = Number(window.prompt('Digite um número: '));
+            var dobro = n1 * 2;
+            var dividir = n1 / 2;
+            var d = document.getElementById('exibir');
+            d.innerHTML = 'O dobro de ' + n1 + ' é ' + dobro + ' e a metade de ' + n1 + ' é ' + dividir;
+        }
+    </script>
+</body>
+</html>
