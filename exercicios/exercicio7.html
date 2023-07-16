@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular média do aluno</title>
+
+    <style>
+        
+        body { font: 12pt Arial; }
+        button { font-size: 12pt; padding: 30px;  }
+
+        div#exibir{
+            margin-top: 2%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Média do aluno v1.0</h1>
+
+    <button id="media" onclick="calcular()">Calcular a média</button>
+
+    <div id="exibir">A média aparecerá aqui...</div>
+
+    <script>
+        function calcular() {
+            var nome = window.prompt('Qual é o nome do aluno?');
+            var n1 = Number(window.prompt('Qual é a primeira nota de ' + nome));
+            var n2 = Number(window.prompt('Qual é a segunda nota de ' + nome));
+            var mediaAluno = (n1 + n2) / 2;
+            var res = document.getElementById('exibir');
+            res.innerHTML = `<p>Calculando a média final de <mark>${nome}</mark>.</p>`
+            res.innerHTML += `<p>As notas obtidas foram <mark>${n1} e ${n2}</mark>.</p>` // O += é necessário, pois indica um pedido de "mantenha a frase anterior, adicionando essa outra frase". Se não fosse ele, a linha anterior seria apagada.
+            res.innerHTML += `<p>A média final será <mark>${mediaAluno}</mark>.</p>`
+        }
+    </script>
+</body>
+</html>
