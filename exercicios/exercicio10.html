@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ações</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+body { font: 12pt Arial; }
+h1, h2, h3 { font-family: 'Pacifico', cursive; font-weight: normal;}
+button { font-size: 12pt; padding: 30px; }
+    </style>
+</head>
+<body>
+    <h1>Javascript Externo</h1>
+    <button onclick="acao1()">Ação 1</button>
+    <button onclick="acao2()">Ação 2</button>
+    <button onclick="acao3()">Ação 3</button>
+    <button onclick="acao4()">Ação 4</button>
+
+    <section id="saida">
+        <p>Aqui vou registrar suas ações com os botões acima</p>
+    </section>
+
+    <script>
+        let resp = window.document.getElementById('saida')
+// Lembre-se que toda variável declarada aqui fora possui escopo global. Veja mais sobre escopo no seu material em PDF, na aula 07.
+
+function acao1() {
+    resp.innerHTML += '<p>Clicou no primeiro botão</p>'
+}
+
+function acao2() {
+    resp.innerHTML += '<p>Clicou no segundo botão</p>'
+}
+
+function acao3() {
+    resp.innerHTML += '<p>Clicou no terceiro botão</p>'
+}
+
+function acao4() {
+    resp.innerHTML += '<p>Clicou no quarto botão</p>'
+}
+    </script>
+</body>
+</html>

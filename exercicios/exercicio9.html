@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Cliques</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+body { font: 12pt Arial; }
+h1, h2, h3 { font-family: 'Pacifico', cursive; font-weight: normal;}
+button { font-size: 12pt; padding: 30px; }
+    </style>
+</head>
+<body>
+    <h1>Contador de cliques</h1>
+    <button onclick="contar()">Clique em mim</button>
+    <button onclick="zerar()">Resetar o contador</button>
+    <section id="resultado">
+        <p>O contador está com <mark>0</mark> cliques.</p>
+    </section>
+
+    <script>
+        let contador = 0;
+        let resposta = document.querySelector('section#resultado');
+// As variáveis declaradas aqui fora são consideradas GLOBAIS e funcionam dentro do programa inteiro
+
+function contar() {
+    contador ++ // É a mesma coisa que contador = contador + 1
+    resposta.innerHTML = `<p>O contador está com <mark>${contador}</mark> cliques.</p>`
+}
+
+function zerar() {
+    contador = 0
+    resposta.innerHTML = null
+}
+    </script>
+</body>
+</html>
