@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        
+        body { font: 12pt Arial; }
+        button { font-size: 12pt; padding: 30px;  }
+
+        div#exibir{
+            margin-top: 2%;
+        }
+    </style>
 </head>
 <body>
     <h1>Vários cálculos em JS</h1>
@@ -16,9 +26,24 @@
 
     <script>
         function calculos() {
-            var numero = Number(Window.prompt('Digite um número: '));
-            var numeroAbsoluto = numero;
-            
+            var numero = Number(window.prompt('Digite um número: '));
+            var numeroAbsoluto = Math.abs(numero); // este comando calculará o valor absoluto do número escolhido no prompt
+            var parteInteira = Math.trunc(numero); // este comando calculará a parte inteira mais próximo de um número com casas decimais
+            var numeroProximo = Math.round(numero); // este comando calculará o número mais próximo de um número com casas decimais
+            var raizQuadrada = Math.sqrt(numero); // este comando calculará a raiz quadrada do número escolhido pelo usuário
+            var raizCubica = Math.cbrt(numero); // calculará a raiz cúbica
+            var potenciaQuadrada = Math.pow(numero, 2); // calculará a potência do número elevado ao quadrado
+            var potenciaCubica = Math.pow(numero, 3); // calculará o número elevado ao cubo
+            var res = document.getElementById('exibir');
+            res.innerHTML = `<p>O número a ser analisado será o <b>${numero}</b>.</p>`
+            res.innerHTML += `<p>O seu valor absoluto é <b>${numeroAbsoluto}</b>.</p>`
+            res.innerHTML += `<p>A sua parte inteira é <b>${parteInteira}</b>.</p>`
+            res.innerHTML += `<p>O valor inteiro mais próximo é <b>${numeroProximo}</b>.</p>`
+            res.innerHTML += `<p>Sua raiz quadrada é <b>${raizQuadrada}</b>.</p>`
+            res.innerHTML += `<p>Sua raiz cúbica é <b>${raizCubica}</b>.</p>`
+            res.innerHTML += `<p>Sua potência el é <b>${raizCubica}</b>.</p>`
+            res.innerHTML += `<p>O valor de ${numero}<sup>2</sup> é <b>${potenciaQuadrada}</b>.</p>`
+            res.innerHTML += `<p>O valor de ${numero}<sup>3</sup> é <b>${potenciaCubica}</b>.</p>`
         }
     </script>
 </body>
